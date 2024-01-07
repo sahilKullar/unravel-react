@@ -38,6 +38,6 @@ export function getAllContacts() {
 }
 
 export function getContact(id) {
-  console.log(contactList.filter((contact) => contact.id === id));
+  // console.log(contactList.filter((contact) => contact.id === id));
   return contactList.find((contact) => contact.id === id);
 }
