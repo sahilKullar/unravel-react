@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts,
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid blueviolet;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 0;
+}
+
+.contact-list-item {
+  width: 10rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+.contact-list-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.search-input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: 1px solid blueviolet;
+  outline: none;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 5rem;
+}
+
+.navbar a {
+  margin: 1rem 2rem;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.navbar a:hover {
+  color: #000;
+}
+
+.navbar .active {
+  border-bottom: 2px solid #fff;
+}
+
+.navbar .active:hover {
+  border-bottom: 2px solid #000;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subTitle {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid blueviolet;
+  margin-bottom: 0;
+}
+
+.contactDetails ul {
+  background-color: blueviolet;
+  color: #fff;
+
+  padding: 1.5rem;
+  list-style: none;
+  width: max-content;
+  border-radius: 8px;
+}
+
+.contactDetails ul ol {
+  padding: 0;
+  margin: 0;
+}
+
+.no-match {
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-match h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+.no-match h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+.no-match a {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.no-match a:hover {
+  transform: scale(1.1);
+}
+
+.layout {
+  border: 2px solid blueviolet;
+  width: 80%;
+  min-height: 80vh;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: blueviolet;
+  color: #fff;
+  border: 2px solid blueviolet;
+  outline: none;
+  border-end-start-radius: 50px;
+  border-top-left-radius: 50px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
